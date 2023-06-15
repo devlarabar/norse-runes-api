@@ -9,7 +9,7 @@ URL Path:
 ```https://www.example.com/api/find?<query>=<value>```
 
 For the `rune` query, acceptable values include:
-```fehu, uruz, thurisaz, ansuz, raidho, kenaz, gebo, wunjo, hagalaz, nauthiz, isa, jera, eihwaz, perthro, algiz, sowilo, tiwaz, berkana, ehwaz, mannaz, laguz, ingwaz, othala, dagaz, odin```
+```fehu, uruz, thurisaz, ansuz, raidho, kenaz, gebo, wunjo, hagalaz, nauthiz, isa, jera, eihwaz, perthro, algiz, sowilo, tiwaz, berkana, ehwaz, mannaz, laguz, ingwaz, othala, dagaz, odin, random```, where `random` will return a random rune.
 
 ### To draw runes
 URL Path:
