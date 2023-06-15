@@ -2,8 +2,9 @@
   "name": "norse-runes-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node server.js"
+  },
   "author": "Lara Alexander",
   "license": "ISC",
   "dependencies": {
