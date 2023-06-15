@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An API that sends divination data for Norse Runes.">
+        <meta name="keywords" content="norse, runes, api, divination">
+        <meta name="author" content="Lara Alexander">
+        <title>Norse Runes API</title>
+        <!-- external stylesheets & fonts -->
+        <link rel="stylesheet" href="css/reset.css"> <!-- normalize stylesheet -->
+        <link rel="stylesheet" href="css/style.css"> <!-- main stylesheet-->
+    </head>
+    <body>
+        <main class="container">
+            <h1>Norse Runes API Documentation</h1>
+            <p>The Norse Runes API is an easy to use and free API that serves data on Norse runes. It is similar to Tarot APIs.</p>
+
+            <h2>Finding a specific rune</h2>
+            <p>URL path: <strong>/api/find</strong></p>
+            <span class="example">https://www.example.com/api/find?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
+
+            <table>
+                <thead>
+                    <td>
+                        Query
+                    </td>
+                    <td>
+                        Acceptable values
+                    </td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            rune
+                        </td>
+                        <td>
+                            any rune name from the following: fehu, uruz, thurisaz, ansuz, raidho, kenaz, gebo, wunjo, hagalaz, nauthiz, isa, jera, eihwaz, perthro, algiz, sowilo, tiwaz, berkana, ehwaz, mannaz, laguz, ingwaz, othala, dagaz, odin
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Drawing runes</h2>
+            <p>URL path: <strong>/api/draw</strong></p>
+            <span class="example">https://www.example.com/api/draw?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
+
+            <table>
+                <thead>
+                    <td>
+                        Query
+                    </td>
+                    <td>
+                        Acceptable values
+                    </td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            amount
+                        </td>
+                        <td>
+                            any numerical value between 1-25
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>

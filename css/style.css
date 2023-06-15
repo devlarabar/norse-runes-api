@@ -1,0 +1,77 @@
+/* ********************
+html / body styles
+******************** */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+/* ********************
+layout
+******************** */
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+/* ********************
+headers
+******************** */
+h1 {
+    font-size: 3rem;
+    margin: 20px 0 10px 0;
+}
+h2 {
+    font-size: 2rem;
+    margin: 20px 0 10px 0;
+}
+
+/* ********************
+tables
+******************** */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+thead td {
+    background: #ddd;
+}
+.urlpath td {
+    background: #eee;
+}
+
+/* ********************
+misc styles
+******************** */
+.highlight-yellow {
+    background: yellow;
+}
+.highlight-pink {
+    background: pink;
+}
+.example {
+    font-family: 'consolas', monospace;
+    display: block;
+}
+strong {
+    font-weight: bold;
+}
+
+/* ********************
+media queries 
+******************** */
