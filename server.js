@@ -14,7 +14,12 @@ app.listen(process.env.PORT || PORT, () => {
 
 // Display index.html on the home page
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+    let rune1 = divination.runes[2]
+    let rune2 = divination.runes[5]
+    let rune3 = divination.runes[12]
+    let rune4 = divination.runes[18]
+    let rune5 = divination.runes[21]
+    res.render('index.ejs', { rune1: rune1, rune2: rune2, rune3: rune3, rune4: rune4, rune5: rune5 })
 })
 
 // Display all API data
@@ -52,16 +57,20 @@ app.get('/api/draw', (req, res) => {
 // Draw runes in a spread
 app.get('/api/spread', (req, res) => {
     const spread = req.query.spread
-
-    if (spread == 'threeruneguidance') {
-        let runes = drawRunes(3)
-        let runeSpread = {
-            'current situation': getRune(runes[0]),
-            'obstacle': getRune(runes[1]),
-            'guidance': getRune(runes[2])
+    if (spread) {
+        if (spread == 'threeruneguidance') {
+            let runes = drawRunes(3)
+            let runeSpread = {
+                'current situation': getRune(runes[0]),
+                'obstacle': getRune(runes[1]),
+                'guidance': getRune(runes[2])
+            }
+            res.json(runeSpread)
         }
-        res.json(runeSpread)
+    } else {
+        res.status(404).json(divination.errors[404]).end()
     }
+    
 })
 
 // Get CSS files

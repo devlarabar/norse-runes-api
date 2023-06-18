@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An API that sends divination data for Norse Runes.">
+        <meta name="keywords" content="norse, runes, api, divination">
+        <meta name="author" content="Lara Alexander">
+        <title>Norse Runes API</title>
+        <!-- external stylesheets & fonts -->
+        <link rel="stylesheet" href="css/reset.css"> <!-- normalize stylesheet -->
+        <link rel="stylesheet" href="css/style.css"> <!-- main stylesheet-->
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2978/2978627.png">
+    </head>
+    <body>
+        <main class="container">
+            <h1>Norse Runes API Documentation</h1>
+            <p>The Norse Runes API is an easy to use and free API that serves data on Norse runes. It is similar to Tarot APIs.</p>
+            <p>This API is a <em>work in progress</em>. All of the runes are still being added. The current data is from <a href="https://www.twowander.com/blog/rune-meanings-how-to-use-runestones-for-divination">this website</a>.</p>
+
+            <h2>Finding a specific rune</h2>
+            <p>URL path: <strong>/api/find</strong></p>
+            <span class="example">https://www.example.com/api/find?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
+
+            <table>
+                <thead>
+                    <td>
+                        Query
+                    </td>
+                    <td>
+                        Acceptable values
+                    </td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            rune
+                        </td>
+                        <td>
+                            any rune name from the following: fehu, uruz, thurisaz, ansuz, raidho, kenaz, gebo, wunjo, hagalaz, nauthiz, isa, jera, eihwaz, perthro, algiz, sowilo, tiwaz, berkana, ehwaz, mannaz, laguz, ingwaz, othala, dagaz, odin
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Response Data for <span class="example">https://www.example.com/api/find?rune=<%= rune1.rune %></span></h3>
+            <pre class="resData">
+                <span class="blue">{</span>
+                    'rune'<span class="lightblue">:</span> '<%= rune1.rune %>',
+                    'meanings'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune1.meanings.length; i++) {%><% if (rune1.meanings[i] != rune1.meanings[rune1.meanings.length-1]) {%>'<%= rune1.meanings[i] %>', <%} else {%>'<%= rune1.meanings[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                    'description'<span class="lightblue">:</span> "<%= rune1.description %>",
+                    'reversed'<span class="lightblue">:</span> "<%= rune1.reversed %>",
+                    'keywords'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune1.keywords.length; i++) {%><% if (rune1.keywords[i] != rune1.keywords[rune1.keywords.length-1]) {%>'<%= rune1.keywords[i] %>', <%} else {%>'<%= rune1.keywords[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                    'aett'<span class="lightblue">:</span> '<%= rune1.aett %>',
+                    'sound'<span class="lightblue">:</span> '<%= rune1.sound %>'
+                <span class="blue">}</span></pre>
+
+            <h2>Drawing runes</h2>
+            <p>URL path: <strong>/api/draw</strong></p>
+            <span class="example">https://www.example.com/api/draw?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
+
+            <table>
+                <thead>
+                    <td>
+                        Query
+                    </td>
+                    <td>
+                        Acceptable values
+                    </td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            amount
+                        </td>
+                        <td>
+                            any numerical value between 1-25
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Response Data for <span class="example">https://www.example.com/api/draw?amount=2</span></h3>
+            <pre class="resData">
+                <span class="yellow">[</span>
+                    <span class="blue">{</span>
+                        'rune'<span class="lightblue">:</span> '<%= rune2.rune %>',
+                        'meanings'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune2.meanings.length; i++) {%><% if (rune2.meanings[i] != rune2.meanings[rune2.meanings.length-1]) {%>'<%= rune2.meanings[i] %>', <%} else {%>'<%= rune2.meanings[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                        'description'<span class="lightblue">:</span> "<%= rune2.description %>",
+                        'reversed'<span class="lightblue">:</span> "<%= rune2.reversed %>",
+                        'keywords'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune2.keywords.length; i++) {%><% if (rune2.keywords[i] != rune2.keywords[rune2.keywords.length-1]) {%>'<%= rune2.keywords[i] %>', <%} else {%>'<%= rune2.keywords[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                        'aett'<span class="lightblue">:</span> '<%= rune2.aett %>',
+                        'sound'<span class="lightblue">:</span> '<%= rune2.sound %>',
+                        'position'<span class="lightblue">:</span> 'reversed'
+                    <span class="blue">}</span>,
+                    <span class="blue">{</span>
+                        'rune'<span class="lightblue">:</span> '<%= rune3.rune %>',
+                        'meanings'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune3.meanings.length; i++) {%><% if (rune3.meanings[i] != rune3.meanings[rune3.meanings.length-1]) {%>'<%= rune3.meanings[i] %>', <%} else {%>'<%= rune3.meanings[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                        'description'<span class="lightblue">:</span> "<%= rune3.description %>",
+                        'reversed'<span class="lightblue">:</span> "<%= rune3.reversed %>",
+                        'keywords'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune3.keywords.length; i++) {%><% if (rune3.keywords[i] != rune3.keywords[rune3.keywords.length-1]) {%>'<%= rune3.keywords[i] %>', <%} else {%>'<%= rune3.keywords[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                        'aett'<span class="lightblue">:</span> '<%= rune3.aett %>',
+                        'sound'<span class="lightblue">:</span> '<%= rune3.sound %>',
+                        'position'<span class="lightblue">:</span> 'upright'
+                    <span class="blue">}</span>
+                <span class="yellow">]</span></pre>
+
+            <h2>Rune Spreads</h2>
+            <p>URL path: <strong>/api/spread</strong></p>
+            <span class="example">https://www.example.com/api/spread?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
+
+            <table>
+                <thead>
+                    <td>
+                        Query
+                    </td>
+                    <td>
+                        Acceptable values
+                    </td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            spread
+                        </td>
+                        <td>
+                            threerunespread
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Response Data for <span class="example">https://www.example.com/api/spread?spread=threerunespread</span></h3>
+            <pre class="resData">
+                <span class="blue">{</span>
+                    'current situation'<span class="lightblue">:</span>
+                        <span class="blue">{</span>
+                            'rune'<span class="lightblue">:</span> '<%= rune3.rune %>',
+                            'meanings'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune3.meanings.length; i++) {%><% if (rune3.meanings[i] != rune3.meanings[rune3.meanings.length-1]) {%>'<%= rune3.meanings[i] %>', <%} else {%>'<%= rune3.meanings[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                            'description'<span class="lightblue">:</span> "<%= rune3.description %>",
+                            'reversed'<span class="lightblue">:</span> "<%= rune3.reversed %>",
+                            'keywords'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune3.keywords.length; i++) {%><% if (rune3.keywords[i] != rune3.keywords[rune3.keywords.length-1]) {%>'<%= rune3.keywords[i] %>', <%} else {%>'<%= rune3.keywords[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                            'aett'<span class="lightblue">:</span> '<%= rune3.aett %>',
+                            'sound'<span class="lightblue">:</span> '<%= rune3.sound %>',
+                            'position'<span class="lightblue">:</span> 'upright'
+                        <span class="blue">}</span>,
+                    'obstacle'<span class="lightblue">:</span>
+                        <span class="blue">{</span>
+                            'rune'<span class="lightblue">:</span> '<%= rune4.rune %>',
+                            'meanings'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune4.meanings.length; i++) {%><% if (rune4.meanings[i] != rune4.meanings[rune4.meanings.length-1]) {%>'<%= rune4.meanings[i] %>', <%} else {%>'<%= rune4.meanings[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                            'description'<span class="lightblue">:</span> "<%= rune4.description %>",
+                            'reversed'<span class="lightblue">:</span> "<%= rune4.reversed %>",
+                            'keywords'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune4.keywords.length; i++) {%><% if (rune4.keywords[i] != rune4.keywords[rune4.keywords.length-1]) {%>'<%= rune4.keywords[i] %>', <%} else {%>'<%= rune4.keywords[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                            'aett'<span class="lightblue">:</span> '<%= rune4.aett %>',
+                            'sound'<span class="lightblue">:</span> '<%= rune4.sound %>',
+                            'position'<span class="lightblue">:</span> 'upright'
+                        <span class="blue">}</span>,
+                    'guidance'<span class="lightblue">:</span>
+                        <span class="blue">{</span>
+                            'rune'<span class="lightblue">:</span> '<%= rune5.rune %>',
+                            'meanings'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune5.meanings.length; i++) {%><% if (rune5.meanings[i] != rune5.meanings[rune5.meanings.length-1]) {%>'<%= rune5.meanings[i] %>', <%} else {%>'<%= rune5.meanings[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                            'description'<span class="lightblue">:</span> "<%= rune5.description %>",
+                            'reversed'<span class="lightblue">:</span> "<%= rune5.reversed %>",
+                            'keywords'<span class="lightblue">:</span> <span class="yellow">[</span><% for (let i = 0; i < rune5.keywords.length; i++) {%><% if (rune5.keywords[i] != rune5.keywords[rune5.keywords.length-1]) {%>'<%= rune5.keywords[i] %>', <%} else {%>'<%= rune5.keywords[i] %>'<%}%><%}%><span class="yellow">]</span>,
+                            'aett'<span class="lightblue">:</span> '<%= rune5.aett %>',
+                            'sound'<span class="lightblue">:</span> '<%= rune5.sound %>',
+                            'position'<span class="lightblue">:</span> 'reversed'
+                        <span class="blue">}</span>
+                    <span class="blue">}</span>
+                <span class="yellow">]</span></pre>
+        </main>
+    </body>
+</html>

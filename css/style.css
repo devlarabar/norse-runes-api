@@ -12,7 +12,7 @@ html {
 body {
     font-size: 1.5rem;
     line-height: 1.5;
-    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    font-family: 'Calibri', 'Geneva', 'Tahoma', sans-serif;
 }
 
 /* ********************
@@ -21,20 +21,32 @@ layout
 .container {
     margin: auto;
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     padding: 20px;
+}
+.resData {
+    white-space: pre-wrap;
+    font: 1.2rem 'Consolas', 'Courier New', monospace;
+    background: #2f2b34;
+    color: #d3d3d3;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 /* ********************
 headers
 ******************** */
-h1 {
-    font-size: 3rem;
+h1, h2, h3 {
     margin: 20px 0 10px 0;
+}
+h1 {
+    font-size: 2.7rem;
 }
 h2 {
     font-size: 2rem;
-    margin: 20px 0 10px 0;
+}
+h3 {
+    font-size: 1.8rem;
 }
 
 /* ********************
@@ -43,13 +55,19 @@ tables
 table {
     border-collapse: collapse;
     width: 100%;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    background: #f2f3fd;
+    color: #42466f;
+    table-layout: fixed;
+    margin-top: 10px;
 }
 td {
-    border: 2px solid #ddd;
-    padding: 10px;
+    border-bottom: 2px solid #d4d6ec;
+    padding: 5px 20px;
 }
 thead td {
-    background: #ddd;
+    background: #d4d6ec;
 }
 .urlpath td {
     background: #eee;
@@ -64,14 +82,29 @@ misc styles
 .highlight-pink {
     background: pink;
 }
-.example {
-    font-family: 'consolas', monospace;
-    display: block;
-}
 strong {
     font-weight: bold;
 }
-
+.blue {
+    color: rgb(37, 134, 244);
+}
+.orange {
+    color: rgb(208, 121, 14);
+}
+.yellow {
+    color: yellow;
+}
+.lightblue {
+    color: rgb(121, 221, 255);
+}
+.example {
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    font: 1.2rem 'Consolas', 'Courier New', monospace;
+    display: inline-block;
+}
 /* ********************
 media queries 
 ******************** */
