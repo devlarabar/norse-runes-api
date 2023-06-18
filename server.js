@@ -38,21 +38,30 @@ app.get('/api/find', (req, res) => {
     }
 })
 
-// Draw runes
+// Draw runes without a specific spread
 app.get('/api/draw', (req, res) => {
     const amount = req.query.amount && req.query.amount <= divination.runes.length ? req.query.amount : 1
 
-    let runes = []
-    for (let i = 0; i < amount; i++) {
-        let rng = Math.floor(Math.random()*(divination.runes.length))
-        while (runes.includes(rng)) {
-            rng = Math.floor(Math.random()*(divination.runes.length))
-        }
-        runes.push(rng)
-    }
+    let runes = drawRunes(amount)
     let draw = divination.runes.filter((x, i) => runes.includes(i))
 
     res.json(draw)
+})
+
+
+// Draw runes in a spread
+app.get('/api/spread', (req, res) => {
+    const spread = req.query.spread
+
+    if (spread == 'threeruneguidance') {
+        let runes = drawRunes(3)
+        let runeSpread = {
+            'current situation': getRune(runes[0]),
+            'obstacle': getRune(runes[1]),
+            'guidance': getRune(runes[2])
+        }
+        res.json(runeSpread)
+    }
 })
 
 // Get CSS files
@@ -63,3 +72,33 @@ app.get('/css/reset.css', (req, res) => {
 app.get('/css/style.css', (req, res) => {
     res.sendFile(__dirname + '/css/style.css')
 })
+
+
+// Utility functions
+
+// Draw runes without duplication
+function drawRunes(amount) {
+    let runes = []
+    for (let i = 0; i < amount; i++) {
+        let rng = Math.floor(Math.random()*(divination.runes.length))
+        while (runes.includes(rng)) {
+            rng = Math.floor(Math.random()*(divination.runes.length))
+        }
+
+        runes.push(rng)
+    }
+    return runes
+}
+
+// Get rune info from index
+function getRune(index) {
+    let rune = divination.runes.filter((x, i) => i == index)[0]
+    rune.position = isReversed()
+    return rune
+}
+
+// Check if rune is reversed
+function isReversed() {
+    const reversed = Math.floor(Math.random()*2) == 0 ? true : false
+    return reversed == true ? 'reversed' : 'upright'
+}
