@@ -146,38 +146,48 @@ const divination = {
         },
         {
             'rune': 'tiwaz',
-            'meanings': ['victory'],
-            'description': "Tiwaz is representative of the warrior’s arrowhead of the God Tyr. It shows that you are capable of spearheading your way through all your troubles and possess great leadership skills, authority and rationality. It can indicate victory and knowing of your true strengths with a willingness to self-sacrifice. Reversed it can indicate blocked creative energies, imbalance, and lack of passion.",
+            'meanings': ['victory', 'creator'],
+            'description': "This rune represents Tyr's arrowhead, and shows you that you are capable of fighting through your challenges with great authority and rationality. Tyr can indicate victory, success, and courage in the face of opposition, as well as success in legal battles if you are in the right. However, not all victories come without some level of personal sacrifice.",
+            'reversed': "Tyr reversed can indicate injustice, dishonesty, or defeat.",
             'keywords': ['leadership', 'rationality', 'victory', 'honour', 'bravery', 'courage', 'strength', 'perseverance', 'endurance'],
-            'aett': 'tyr'
+            'aett': 'tyr',
+            'sound': 't'
         },
         {
             'rune': 'berkana',
             'meanings': ['birch'],
-            'description': "Berkana is the rune of birth. It represents the Birch Goddess and so indicates fertility and creation, not just of an actual birth (its traditional meaning), but also of projects, partnerships and rebirth. It indicates mental and physical growth, and a regenerative power and liberation of spirit. Reversed it can point to anxiety or rigid control.",
-            'keywords': ['fertility', 'growth', 'renewal', 'new beginnings', 'birth', 'creation', 'new projects', 'creativity'],
-            'aett': 'tyr'
+            'description': "This is the rune of birth and rebirth, fertility and creation, and represents the Birch Goddess. It represents various kinds of birth - new phases, new projects, new beginnings and new partnerships, as well as regenerative power and mental or physical growth. Berkana is a powerful reminder that every ending brings forth a new beginning.",
+            'reversed': "Berkana reversed indicates a lack of growth or progress, and stagnation.",
+            'keywords': ['fertility', 'growth', 'renewal', 'new beginnings', 'birth', 'creation', 'new projects', 'creativity', 'rebirth'],
+            'aett': 'tyr',
+            'sound': 'b'
         },
         {
             'rune': 'ehwaz',
             'meanings': ['horse'],
-            'description': "Ehwaz is the horse. This represents man’s trusty aid, our only form of transport in times past. It indicates a moving forward and change for the better with gradual but steady progress. It can also show teamwork, trust and loyalty. Reversed it can show restlessness, mistrust or disharmony.",
-            'keywords': ['progress', 'movement', 'harmony', 'trust', 'loyalty', 'friendship', 'assistance', 'duality', 'animal instincts'],
-            'aett': 'tyr'
+            'description': "Ehwaz is man's companion and our method of moving forward and progressing. It represents slow and steady progress, teamwork, trust, and loyalty. It also represents the partnership between man and horse, and shows us that through cooperation and loyalty we can achieve forward movement and progress.",
+            'reversed': "Ehwaz reversed can indicate restlessness, dissatisfaction, hindrance or disharmony between partners.",
+            'keywords': ['progress', 'movement', 'harmony', 'trust', 'loyalty', 'friendship', 'assistance', 'duality', 'animal instincts', 'partnership', 'cooperation'],
+            'aett': 'tyr',
+            'sound': 'e, eh'
         },
         {
             'rune': 'mannaz',
             'meanings': ['man'],
-            'description': "Mannaz is representative of humankind and humanity. It encompasses yourself and identity, and relationship towards others. It is social order and cooperation, our sense of morals and values. Reversed it can indicate self-delusion, manipulation and isolation.",
-            'keywords': ['humanity', 'collective', 'mortality', 'community', 'relationships', 'morals', 'values'],
-            'aett': 'tyr'
+            'description': "Mannaz represents mankind as divine descendents of the Gods, and mankind's quest for perfect balance in life. It is representative of humanity, our identity, and our relationships with others, as well as social morals and values. It tells us we are capable of achieving our fullest potential.",
+            'reversed': "Reversed, Mannaz can indicate self-delusion, internal conflict, manipulation and isolation.",
+            'keywords': ['humanity', 'collective', 'mortality', 'community', 'relationships', 'morals', 'values', 'mankind', 'higher self'],
+            'aett': 'tyr',
+            'sound': 'm'
         },
         {
             'rune': 'laguz',
-            'meanings': ['lake'],
-            'description': "Laguz represents the element of water and so is tied to our emotions, dreams and intuition. It indicates a healing power of renewal, heightened imagination and psychic abilities. It can also relate to mysteries, secrets, the unknown and the underworld. Reversed it can point to fear, misjudgement, and disconnect from spirit.",
-            'keywords': ['water', 'intuition', 'imagination', 'healing', 'dreams', 'mysteries', 'insight', 'instinct', 'knowing'],
-            'aett': 'tyr'
+            'meanings': ['lake', 'water'],
+            'description': "Laguz represents water, tying it to our dreams, emotions, and intuition. It is representative of healing powers such as renewal and psychic abilities, and can indicate a need to 'go with the flow' rather than swim against the current.",
+            'reversed': "Laguz reversed can indicate a resistance to change, misjudgment, or stagnation, or a disruption of flow.",
+            'keywords': ['water', 'intuition', 'imagination', 'healing', 'dreams', 'mysteries', 'insight', 'instinct', 'knowing', 'flow'],
+            'aett': 'tyr',
+            'sound': 'l'
         },
         {
             'rune': 'ingwaz',
