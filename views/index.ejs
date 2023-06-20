@@ -17,11 +17,11 @@
         <main class="container">
             <h1>Norse Runes API Documentation</h1>
             <p>The Norse Runes API is an easy to use and free API that serves data on Norse runes. It is similar to Tarot APIs.</p>
-            <p>This API is a <em>work in progress</em>. All of the runes are still being added. The current data is from <a href="https://www.twowander.com/blog/rune-meanings-how-to-use-runestones-for-divination">this website</a>.</p>
+            <p>This API is a <em>work in progress</em>. All of the runes are still being added.</p>
 
             <h2>Finding a specific rune</h2>
             <p>URL path: <strong>/api/find</strong></p>
-            <span class="example">https://www.example.com/api/find?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
+            <span class="example">https://norserunesapi.cyclic.app/api/find?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
 
             <table>
                 <thead>
@@ -44,7 +44,7 @@
                 </tbody>
             </table>
 
-            <h3>Response Data for <span class="example">https://www.example.com/api/find?rune=<%= rune1.rune %></span></h3>
+            <h3>Response Data for <span class="example">https://www.norserunesapi.cyclic.app/api/find?rune=<%= rune1.rune %></span></h3>
             <pre class="resData">
                 <span class="blue">{</span>
                     'rune'<span class="lightblue">:</span> '<%= rune1.rune %>',
@@ -58,7 +58,7 @@
 
             <h2>Drawing runes</h2>
             <p>URL path: <strong>/api/draw</strong></p>
-            <span class="example">https://www.example.com/api/draw?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
+            <span class="example">https://www.norserunesapi.cyclic.app/api/draw?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
 
             <table>
                 <thead>
@@ -81,7 +81,7 @@
                 </tbody>
             </table>
 
-            <h3>Response Data for <span class="example">https://www.example.com/api/draw?amount=2</span></h3>
+            <h3>Response Data for <span class="example">https://www.norserunesapi.cyclic.app/api/draw?amount=2</span></h3>
             <pre class="resData">
                 <span class="yellow">[</span>
                     <span class="blue">{</span>
@@ -108,7 +108,7 @@
 
             <h2>Rune Spreads</h2>
             <p>URL path: <strong>/api/spread</strong></p>
-            <span class="example">https://www.example.com/api/spread?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
+            <span class="example">https://www.norserunesapi.cyclic.app/api/spread?<span class="highlight-yellow">query</span>=<span class="highlight-pink">value</span></span>
 
             <table>
                 <thead>
@@ -131,7 +131,7 @@
                 </tbody>
             </table>
 
-            <h3>Response Data for <span class="example">https://www.example.com/api/spread?spread=threerunespread</span></h3>
+            <h3>Response Data for <span class="example">https://www.norserunesapi.cyclic.app/api/spread?spread=threerunespread</span></h3>
             <pre class="resData">
             <span class="yellow">[</span>
                 <span class="blue">{</span>
