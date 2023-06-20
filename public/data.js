@@ -74,59 +74,75 @@ const divination = {
         },
         {
             'rune': 'hagalaz',
-            'meanings': ['hail'],
-            'description': "Hagalaz represents hail. This natural form of disaster which strikes out of the blue and has the power to destroy much needed crops, is similarly indicative of sudden and cataclismic change. Similar to The Tower card in the tarot, Hagalaz represents an unavoidable change that is out of our hands, but how destructive it ends up being is dependant on whether we are capable of weathering its storm with grace. As they say, some storms come to clear our path. The lesson of Hagalaz is to learn from our hardships and grow through our mistakes. It has no inverted meaning.",
-            'keywords': ['destruction', 'natural wrath', 'uncontrolled forces', 'testing', 'change', 'external input'],
-            'aett': 'heimdall'
+            'meanings': ['hail', 'hailstone'],
+            'description': "Hagalaz represents hail, or hailstones - a natural disaster. It may indicate a similar sudden and cataclismic change which may disrupt or even destroy some of your hard work. It is similar to the Tower card in tarot. Hagalaz is an unavoidable change. Its destructive potential depends on our ability to whether the storm; the storm may leave destruction in its wake, but may also reveal a path forward with clarity. Hagalaz teaches us to learn through these hardships and grow from them. While getting frustrated with the delays and lack of progress created by the storm, it is better to use this time to rest and contemplate the next steps rather than rush into the storm and risk further destruction.",
+            'reversed': 'None',
+            'keywords': ['destruction', 'natural wrath', 'uncontrolled forces', 'testing', 'change', 'external input', 'temporary difficulties', 'delay'],
+            'aett': 'heimdall',
+            'sound': 'h'
         },
         {
             'rune': 'nauthiz',
             'meanings': ['needs'],
-            'description': "Nauthiz is indicative of our needs. What do you need to feel emotionally stable and fulfilled? Are you taking enough time for yourself to balance work, play and rest? Assessing what are our needs and where we may currently be lacking can help us take better care of our future selves, we can’t pour form an empty cup after all. It can also indicate delays, restriction, and lack. This is a time to practice patience.",
-            'keywords': ['need', 'restriction', 'disagreements', 'resistance', 'survival', 'necessity', 'lacking'],
-            'aett': 'heimdall'
+            'description': "The rune Nauthiz represents our needs, and encourages us to think about what exactly we need to feel emotionally stable and fulfilled. It asks us to ensure we are creating balance between work and play. Nauthiz may also indicate delays due to unfulfilled needs; it encourages us to look at potential issues we may be ignoring. Nauthiz can represent restrictions or obstacles to fulfilling our needs, but it also contains the power we need to break through these barriers.",
+            'reversed': 'None',
+            'keywords': ['need', 'restriction', 'disagreements', 'resistance', 'survival', 'necessity', 'lacking', 'overcoming challenge', 'overcoming barriers'],
+            'aett': 'heimdall',
+            'sound': 'n'
         },
         {
             'rune': 'isa',
             'meanings': ['ice'],
-            'description': "Isa represents ice. It’s symbolic of the Hangman card in the Tarot. It highlights the need to pause, wait, although there may be a feeling of being stuck in ice, sometimes a break is what’s needed to put things into perspective. Waiting until we have gathered all the information, all sides of the story, properly done our research, or simply allowed the Universe to unfold. It can also indicate frustration or psychological blocks. Isa has no inverted meaning.",
-            'keywords': ['suspension', 'delay', 'stillness', 'frustration', 'blocks', 'pause', 'waiting'],
-            'aett': 'heimdall'
+            'description': "Isa represents ice, and corresponds with the Hangman card in tarot. It is indicative of a frozen stillness that prevents change and growth, whether that stillness is internal or external. It can represent our own resistance to change, or a halt in activity or growth until a change is made. It can also represent psychological blocks.",
+            'reversed': 'None',
+            'keywords': ['suspension', 'delay', 'stillness', 'frustration', 'blocks', 'pause', 'waiting', 'ice', 'frozen', 'resistance'],
+            'aett': 'heimdall',
+            'sound': 'i, ee'
         },
         {
             'rune': 'jera',
-            'meanings': ['harvest'],
-            'description': "Jera is representative of the harvest. It indicates that we can now reap what we’ve sown and enjoy our plentiful abundance. If you don’t feel like you have many blessings, it can show that either a breakthrough is on the way, or it’s time to take stock and express gratitude for what you do have (you’ll be surprised by how much you can always list in a gratitude journal)! It also represents the life cycle and cyclic nature of Mother Earth. It cannot be reversed.",
-            'keywords': ['year', 'conclusion', 'harvest', 'life cycle', 'endings and beginnings', 'abundance', 'learnings', 'growth'],
-            'aett': 'heimdall'
+            'meanings': ['harvest', 'year', 'season'],
+            'description': "Jera represents the harvest, and the reaping of what we have sown. It is our earned abundance. Now is the time to receive blessings, or count those which are already present in our lives. It also represents the cycle of life, and the importance of flowing with nature to achieve our goals. Jera may indicate the end of a long night and the beginning of a new day.",
+            'reversed': 'None',
+            'keywords': ['year', 'conclusion', 'harvest', 'life cycle', 'endings and beginnings', 'abundance', 'learnings', 'growth', 'rewards', 'cycle', 'reaping'],
+            'aett': 'heimdall',
+            'sound': 'j, y'
         },
         {
             'rune': 'eihwaz',
             'meanings': ['yew'],
-            'description': "In Norse mythology, the ash tree (sometimes said to be translated from the old word for yew- needle ash), Yggradisil, is representative of The Tree Of Life. As such, it relates to the cycle of life, similar to the Death Tarot card (signifying the dying of an old way of being or period of life). It can also represent divine protection, wisdom, enlightenment, and a sense of purpose, symbolising the connection between all the worlds.",
-            'keywords': ['connection', 'inspiration', 'endurance', 'sacred knowledge', 'protection', 'life cycle', 'divinity'],
-            'aett': 'heimdall'
+            'description': "Eihwaz, or the yew tree, sometimes translated to mean the ash tree, is representative of the tree of life, Yggdrasil. Eihwaz is similar to the Death tarot card in that it signifies the death of old ways and the birth of new beginnings. It may also represent a renewed sense of purpose. Death is not a final destination, but a transition; a gateway to something new. Many things worth having in life require sacrifice, in order to make space for what is to come.",
+            'reversed': 'None',
+            'keywords': ['connection', 'inspiration', 'endurance', 'sacred knowledge', 'protection', 'life cycle', 'divinity', 'gateway', 'wisdom', 'tree of life', 'death'],
+            'aett': 'heimdall',
+            'sound': 'eo'
         },
         {
             'rune': 'perthro',
-            'meanings': ['destiny'],
-            'description': "This is the gambler’s rune and as such represents the cup of dice, or fortune. It indicates that influences in life may be down to chance, and so can go either well or not. The lesson here is to learn to take the hand you’ve been dealt and make lemonade out of lemons. In Tarot, this is would be similar to the Wheel of Fortune card. It can also represent hidden meanings, secrets, and change, symbolising the womb. Reversed it can indicate loss of faith.",
-            'keywords': ['fate', 'mysteries', 'occult', 'feminine fertility', 'chance', 'fortune', 'mysticism', 'unknown'],
-            'aett': 'heimdall'
+            'meanings': ['destiny', 'dice cup'],
+            'description': "Perthro is the gambler's rune, and represents the cup of dice, or fortune. In tarot, this would be the Wheel of Fortune card. Perthro is the womb of the goddess - signifying something that hasn't been birthed yet. It indicates that life is sometimes about chance and fate, and it's important to always work with what we are dealt and make the best out of any situation. It can also represent hidden meanings and secrets, as well as free will - our previous actions, and current actions, paving the way for our present and future. As much as chance, our fate is also, in a way, in our own hands.",
+            'reversed': 'This may indicate a period of trouble is on the horizon, or a series of misfortunes, the cause of which may not be known.',
+            'keywords': ['fate', 'mysteries', 'occult', 'feminine fertility', 'chance', 'fortune', 'mysticism', 'unknown', 'divination'],
+            'aett': 'heimdall',
+            'sound': 'p'
         },
         {
             'rune': 'algiz',
             'meanings': ['elk'],
-            'description': "Algiz is the elk, and so represents defence and protection. If you get this one, it means that you have the internal power to manifest your dreams and that your spirit guides are protecting you along your path. It is said to act as a shield to guard you against evil. It can also represent an awakening and strong intuition. Reversed it means there could act as a warning or represent and sense of helplessness.",
-            'keywords': ['protection', 'guardian', 'awakening', 'courage', 'defence', 'instincts'],
-            'aett': 'heimdall'
+            'description': "Algiz represents protection and defence; it may indicate that you have someone, in the physical or metaphysical world, watching over you. Algiz is a shield that guards against evil; it heightens awareness while keeping us safe from harm. Algiz is also said to bring luck to those who need guidance, along with strong intuition. This rune may serve as a warning against someone or something that needs to be guarded against; it may be a call to seek sanctuary, and be on the lookout for any potential threats.",
+            'reversed': 'Reversed, Algiz can represent being or feeling under attack, unsafe, or unprotected.',
+            'keywords': ['protection', 'guardian', 'awakening', 'courage', 'defence', 'instincts', 'sanctuary', 'safety', 'awareness'],
+            'aett': 'heimdall',
+            'sound': 'z'
         },
         {
             'rune': 'sowilo',
             'meanings': ['sun'],
-            'description': "Sowilo is the happy symbol of the sun. It represents a time of joy, abundance, luck, and good fortune. It’s a cause for celebration and can indicate a success of your goals, optimal health and an elemental power. It has no inverted meaning. In Tarot, its card is, likewise, The Sun.",
-            'keywords': ['success', 'vitality', 'inspiration', 'justice', 'success', 'joy', 'happiness', 'abundance'],
-            'aett': 'heimdall'
+            'description': "Sowilo is a positive, happy rune symbolizing the sun. It represents that you are in, or will soon be in, a time of joy and abundance, and that there may be an illuminating force that enables you to break free from doubt and grow. It can indicate success in your goals and good health. It corresponds with the Sun card in tarot. Sowilo helps you see the light during times of darkness.",
+            'reversed': 'None',
+            'keywords': ['success', 'vitality', 'inspiration', 'justice', 'success', 'joy', 'happiness', 'abundance', 'illumination', 'good health', 'willpower'],
+            'aett': 'heimdall',
+            'sound': 's'
         },
         {
             'rune': 'tiwaz',
