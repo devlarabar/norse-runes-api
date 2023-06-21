@@ -3,7 +3,8 @@ const app = express()
 const divination = require('./public/data')
 const cors = require('cors')
 
-app.use(cors())    
+app.use(cors())
+app.use(express.static('public'))
 
 const PORT = 8000
 
@@ -90,15 +91,6 @@ app.get('/api/spread', (req, res) => {
         res.status(404).json(divination.errors[404]).end()
     }
     
-})
-
-// Get CSS files
-app.get('/css/reset.css', (req, res) => {
-    res.sendFile(__dirname + '/css/reset.css')
-})
-
-app.get('/css/style.css', (req, res) => {
-    res.sendFile(__dirname + '/css/style.css')
 })
 
 
