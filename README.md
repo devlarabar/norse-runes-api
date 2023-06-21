@@ -23,15 +23,7 @@ URL Path:
 ```https://www.norserunesapi.cyclic.app/api/spread?<query>=<value>```
 
 For the `spread` query, acceptable values include:
-```threerunespread``` with more coming soon.
-
-## Progress
-
-This API is a work in progress. All of the runes are still being added.
-
-### To-do list
-- Add more keywords to each rune
-- Add more rune spreads
+```threeruneguidance, threerunetimeline, fourelements``` with more coming soon.
 
 ## Live link and documentation
 Please see the current deployment [here](https://norserunesapi.cyclic.app/).

@@ -17,7 +17,6 @@
         <main class="container">
             <h1>Norse Runes API Documentation</h1>
             <p>The Norse Runes API is an easy to use and free API that serves data on Norse runes. It is similar to Tarot APIs.</p>
-            <p>This API is a <em>work in progress</em>. All of the runes are still being added.</p>
 
             <h2>Finding a specific rune</h2>
             <p>URL path: <strong>/api/find</strong></p>
@@ -113,25 +112,41 @@
             <table>
                 <thead>
                     <td>
-                        Query
+                        Values for query <span class="example">spread</span>
                     </td>
                     <td>
-                        Acceptable values
+                        How to read
                     </td>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            spread
+                            threeruneguidance
                         </td>
                         <td>
-                            threerunespread
+                            <strong>Current Situation</strong> represents your current circumstances. <strong>Obstacle</strong> will provide insights to any challenges you may be facing. <strong>Guidance</strong> will guide you on how to proceed through these challenges.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            threerunetimeline
+                        </td>
+                        <td>
+                            This is a general spread, and doesn't require a question for the reading. You may however choose to ask the runes to provide insight into a specific situation, in which case the answers provided will relate to that situation. The first rune will represent the <strong>past</strong>, the second will represent the <strong>present</strong>, and the third will represent the <strong>future</strong>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            fourelements
+                        </td>
+                        <td>
+                            <strong>Earth</strong> will highlight matters to be aware of regarding politics, money, and the home. <strong>Air</strong> provides insight in matters regarding communication, and our relationships with others. This rune will highlight any potential conflicts or disturbances in communication. <strong>Fire</strong> represents passion, and your goals. It will guide you on how to proceed in your journey toward your dreams. <strong>Water</strong> will reveal your emotions, and what needs to be done to create a balanced, happy, and peaceful life.
                         </td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3>Response Data for <span class="example">https://www.norserunesapi.cyclic.app/api/spread?spread=threerunespread</span></h3>
+            <h3>Response Data for <span class="example">https://www.norserunesapi.cyclic.app/api/spread?spread=threeruneguidance</span></h3>
             <pre class="resData">
             <span class="yellow">[</span>
                 <span class="blue">{</span>

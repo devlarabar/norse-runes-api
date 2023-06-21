@@ -67,6 +67,25 @@ app.get('/api/spread', (req, res) => {
             }
             res.json(runeSpread)
         }
+        if (spread == 'threerunetimeline') {
+            let runes = drawRunes(3)
+            let runeSpread = {
+                'past': getRune(runes[0]),
+                'present': getRune(runes[1]),
+                'future': getRune(runes[2])
+            }
+            res.json(runeSpread)
+        }
+        if (spread == 'fourelements') {
+            let runes = drawRunes(4)
+            let runeSpread = {
+                'earth': getRune(runes[0]),
+                'air': getRune(runes[1]),
+                'fire': getRune(runes[2]),
+                'water': getRune(runes[3])
+            }
+            res.json(runeSpread)
+        }
     } else {
         res.status(404).json(divination.errors[404]).end()
     }

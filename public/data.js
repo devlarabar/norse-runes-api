@@ -192,30 +192,38 @@ const divination = {
         {
             'rune': 'ingwaz',
             'meanings': ['fertility'],
-            'description': "Ingwaz is the rune of fertility, representing the Earth God Ing. It points to fertility, virility, wellbeing, ancestry, family, and loose ends being tied up, as well as lineage. It has no reversed meaning.",
-            'keywords': ['fertility', 'virility', 'inner growth', 'virtue', 'peace', 'harmony'],
-            'aett': 'tyr'
+            'description': "Ingwaz represents the earth god Ing, and is symbolic of fertibility, virility, family, and lineage, as well as the tying up of loose ends. It protects our homes and allows us to spread our energy out into the worls. Ingwaz symbolizes a seed planted in fertile soil, awaiting the optimal time to sprout; it reminds us that growth cannot be rushed or forced. It encourages strength and patience, as well as the gathering of energy.",
+            'reversed': "None",
+            'keywords': ['fertility', 'virility', 'inner growth', 'virtue', 'peace', 'harmony', 'sexuality', 'ancestry'],
+            'aett': 'tyr',
+            'sound': 'ng'
         },
         {
             'rune': 'othala',
             'meanings': ['heritage'],
-            'description': "Othala is the rune of inheritance. It tells of our lasting legacy, spiritual heritage, values becoming aligned to what is truly important, communal prosperity and fundamental values that we have inherited from those before us. Reversed it can indicate and unwanted inherited issues and prejudice. *It is important to note that unfortunately this symbol has been co-opted by Neo-Nazis and so caution is required with it!",
-            'keywords': ['legacy', 'inheritance', 'spiritual growth', 'abundance', 'values', 'contribution'],
-            'aett': 'tyr'
+            'description': "Othala represents inheritance and our lasting legacy, as well as our spiritual and familial heritage. It is our birthright, and symbolizes the prosperity and values we have been born into - our connection to the past. It is a rune of wealth that cannot be sold; that of family and community.",
+            'reversed': "Reversed, Othala can indicate the inheritance of unwanted or troublesome things. It may also indicate the wasting of resources or neglecting what you have.",
+            'keywords': ['legacy', 'inheritance', 'spiritual growth', 'abundance', 'values', 'contribution', 'homecoming', 'heritage', 'possessions'],
+            'aett': 'tyr',
+            'sound': 'o'
         },
         {
             'rune': 'dagaz',
-            'meanings': ['dawn'],
-            'description': "Dagaz represents dawn. It shows the coming of age and the ending of a cycle. New beginnings are approaching and new breakthroughs, awareness and awakenings are possible. It represents the transformative power of change and that it is a good time to embark upon a fresh enterprise. A final, positive symbol of hope, certainty and security, it has no reversed meaning. This would be the completion of the cycle with the World card in the Tarot.",
-            'keywords': ['day', 'awakening', 'consciousness', 'clarity', 'hope', 'balance', 'growth', 'new cycles'],
-            'aett': 'tyr'
+            'meanings': ['dawn', 'day'],
+            'description': "Dagaz is the dawn; the coming of age, the ending of a cycle. New beginnings are approaching, bringing awareness and awakening. Dagaz represents the transformative power of change, like that which occurs at dawn and twilight. It is a powerful symbol of hope and certainty. It is similar to the World card in tarot. The end of an era is near, but a new cycle soon begins. Dagaz fills our lives with warmth and illumination.",
+            'reversed': "None",
+            'keywords': ['day', 'awakening', 'consciousness', 'clarity', 'hope', 'balance', 'growth', 'new cycles', 'dawn', 'new beginnings', 'certainty', 'illumination', 'completion'],
+            'aett': 'tyr',
+            'sound': 'd'
         },
         {
             'rune': 'blank',
             'meanings': ['unknown'],
-            'description': "As mentioned, some sets come with an optional blank rune indicating the Norse God of Creation’s secrets to be withheld. It reflects that we are not supposed to have all the answers and that that’s OK. As such, its meanings are unknown, secrets, hidden, mystery, ambiguous, unknowable, the answer will reveal itself in time.",
-            'keywords': ['unknown', 'secrets', 'hidden', 'mystery', 'ambiguous', 'unknowable'],
-            'aett': 'none'
+            'description': "Some sets come with an optional blank rune. This is known as Odin's rune. Odin is the god of creation. It tells us that sometimes, we do not have all the answers, and that is okay. This rune indicates hidden meanings, silence, secrets, mysteries, the unknowable, and infinite possibilities. Your answers will reveal themselves in time.",
+            'reversed': "None",
+            'keywords': ['unknown', 'hidden', 'secrets', 'mystery', 'ambiguous', 'unknowable', 'zero', 'void', 'infinite possibility'],
+            'aett': 'None',
+            'sound': 'None'
         }
     ],
     'errors': {
